@@ -22,7 +22,7 @@ Issues
 
 2. The demo web app bases on Yelp API and the app will ask for the geo-location information. If the app cannot get a valid location, it will use a default value.
 
-3. There might be some problems for users who are in the location where Yelp API can not support. These problems can be avoided by rejecting the location-querying request. The app will use default location value instead.
+3. There might be some problems for users who are in the location where Yelp API can not support. These problems can be avoided by rejecting the location-querying request from browser. The app will use default location value instead.
 
 4. (For local test) There are some personal settings that may lead to errors during demo, such as the name or port number of a database. The comments are added above the settings that need to be changed. Like:
 ```
