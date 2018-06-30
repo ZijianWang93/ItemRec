@@ -2,7 +2,7 @@ README
 ==========
 This is a web page with events searching and preference updating functions.
 
-[Demo page](http://54.149.135.241:8080/ItemRec/) (Please read [Issues](#issues) for more information before demo).
+Demo page is terminated now.
 
 Main Function
 ---------
