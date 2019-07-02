@@ -21,19 +21,20 @@ import entity.Item;
 
 /**
  * Servlet implementation class ItemHistory
+ * 
+ * ItemHistory shows the like history selected by users
  */
 @WebServlet("/history")
 public class ItemHistory extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private DBConnection conn = DBConnectionFactory.getDBConnection();
        
-    /**
-     * @see HttpServlet#HttpServlet()
-     */
-    public ItemHistory() {
-        super();
-        // TODO Auto-generated constructor stub
-    }
+	/**
+	 * @see HttpServlet#HttpServlet()
+	 */
+	public ItemHistory() {
+		super();
+	}
 
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
