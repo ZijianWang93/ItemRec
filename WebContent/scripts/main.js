@@ -246,18 +246,6 @@
 		});
 	}
 
-	function collectClick(item_id, user_id) {
-		var url = './click';
-		var params = 'item_id=' + item_id + '&user_id=' + user_id;
-		var xhr = new XMLHttpRequest();
-		xhr.open('GET', url + '?' + params, true);
-		xhr.onerror = function() {
-			console.error("The request couldn't be completed.");
-			errorHandler();
-		};
-		xhr.send();
-	}
-
 	function listItems(items) {
 		// Clear the current results
 		var itemList = $('item-list');
@@ -287,9 +275,12 @@
 				src : item.image_url
 			}));
 		} else {
-			li.appendChild($('img', {
-				src : 'https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png'
-			}))
+			li
+					.appendChild($(
+							'img',
+							{
+								src : 'https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png'
+							}))
 		}
 		// section
 		var section = $('div', {});
@@ -301,9 +292,6 @@
 			className : 'item-name'
 		});
 		title.innerHTML = item.name;
-		title.onclick = function() {
-			collectClick(item_id, user_id);
-		}
 		section.appendChild(title);
 
 		// category
@@ -331,6 +319,7 @@
 		}
 
 		section.appendChild(stars);
+
 		li.appendChild(section);
 
 		// address
