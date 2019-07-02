@@ -4,6 +4,8 @@ This is a web page with events searching and preference updating functions.
 
 Demo page is terminated now.
 
+\[WIP] Recommendation system improvement. [Design Doc](https://docs.google.com/document/d/1vRc7Djr_ZKOrWTG-ErEQWgR7MfSUttrAHDngtm-4i6Q/edit?usp=sharing)
+
 Main Function
 ---------
 1. Supports personalized event recommendation based on favorite records of user.
